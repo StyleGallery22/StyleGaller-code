@@ -69,7 +69,7 @@ def load_image(image_path, size=None, mode="RGB"):
 
 def display_images_grid(pred_images, image_folder=None):
     n = len(pred_images)
-    cols = min(5, n)  # 最多5列
+    cols = min(5, n)  
     rows = (n + cols - 1) // cols
 
     plt.figure(figsize=(4 * cols, 4 * rows))
@@ -432,7 +432,7 @@ def save_feature_maps(features_list, output_dir="feature_maps", cmap='viridis'):
         plt.savefig(output_path, bbox_inches='tight', pad_inches=0.1)
         plt.close() 
 
-    print(f"特征图已保存到目录: {output_dir}")
+    print(f"Feature map has been saved in: {output_dir}")
 
 
 def get_route(original_path, ori_file_name=False):
